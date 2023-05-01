@@ -61,7 +61,7 @@ const Login = () => {
       <h1 className="text-xl font-bold">Login</h1>
       <div class="p-2 w-full md:w-1/3">
         <div class="relative">
-          <label for="message" class="leading-7 text-sm text-gray-300">
+          <label for="message" class="leading-7 text-sm text-black-600">
             Mobile No.
           </label>
           <input
@@ -70,13 +70,13 @@ const Login = () => {
             name="message"
             value={form.mobile}
             onChange={(e) => setForm({ ...form, mobile: e.target.value })}
-            class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-red-400  text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
           />
         </div>
       </div>
       <div class="p-2 w-full md:w-1/3">
         <div class="relative">
-          <label for="message" class="leading-7 text-sm text-gray-300">
+          <label for="message" class="leading-7 text-sm text-black-600">
             Password
           </label>
           <input
@@ -84,7 +84,7 @@ const Login = () => {
             name="message"
             value={form.password}
             onChange={(e) => setForm({ ...form, password: e.target.value })}
-            class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-red-400  text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
           />
         </div>
       </div>

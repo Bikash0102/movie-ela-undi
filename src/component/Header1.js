@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { useRef } from 'react';
 import { Appstate } from '../App';
 
+
 const Header1 = () => {
     const useAppstate = useContext(Appstate);
     const navItem=useRef();
@@ -12,6 +13,8 @@ const Header1 = () => {
        
         navItem.current.classList.toggle('active');
     }
+    
+
   return (
     <>
     
@@ -33,7 +36,8 @@ const Header1 = () => {
            
             <div class="login-register">
                 {useAppstate.login ?
-                    <Link to={'/addmovie'}><a href="#"  class="button" >Discover</a></Link>
+                        <>
+                        <Link to={'/addmovie'}><a href="#" class="button">Addmovie</a></Link></>
                     :
                     <><Link to={'/login'}><a href="#" class="button">Login</a></Link>
                     <Link to={'/signup'}><a href="#" class="button">Register</a></Link>

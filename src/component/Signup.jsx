@@ -90,7 +90,7 @@ const Signup = () => {
       <>
         <div class="p-2 w-full md:w-1/3">
         <div class="relative">
-          <label for="message" class="leading-7 text-sm text-gray-300">
+          <label for="message" class="leading-7 text-sm text-black-300">
             OTP
           </label>
           <input
@@ -98,7 +98,7 @@ const Signup = () => {
             name="message"
             value={OTP}
             onChange={(e) => setOTP(e.target.value)}
-            class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-red-400  text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
           />
         </div>
         </div>
@@ -116,7 +116,7 @@ const Signup = () => {
         <>
       <div class="p-2 w-full md:w-1/3">
         <div class="relative">
-          <label for="message" class="leading-7 text-sm text-gray-300">
+          <label for="message" class="leading-7 text-sm text-black-800">
             Name
           </label>
           <input
@@ -124,13 +124,13 @@ const Signup = () => {
             name="message"
             value={form.name}
             onChange={(e) => setForm({ ...form, name: e.target.value })}
-            class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-red-400 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
           />
         </div>
       </div>
       <div class="p-2 w-full md:w-1/3">
         <div class="relative">
-          <label for="message" class="leading-7 text-sm text-gray-300">
+          <label for="message" class="leading-7 text-sm text-black-800">
             Mobile No.
           </label>
           <input
@@ -139,13 +139,13 @@ const Signup = () => {
             name="message"
             value={form.mobile}
             onChange={(e) => setForm({ ...form, mobile: e.target.value })}
-            class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-red-400 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
           />
         </div>
       </div>
       <div class="p-2 w-full md:w-1/3">
         <div class="relative">
-          <label for="message" class="leading-7 text-sm text-gray-300">
+          <label for="message" class="leading-7 text-sm text-black-800">
             Password
           </label>
           <input
@@ -154,7 +154,7 @@ const Signup = () => {
             name="message"
             value={form.password}
             onChange={(e) => setForm({ ...form, password: e.target.value })}
-            class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            class="w-full bg-white rounded border border-black-800 focus:border-black-500 focus:bg-white focus:ring-2 focus:ring-red-400 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
           />
         </div>
       </div>
