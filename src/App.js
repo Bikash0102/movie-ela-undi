@@ -3,6 +3,7 @@ import Cards from './component/Cards';
 import { Route,Routes } from 'react-router-dom';
 import Addmoives from './component/Addmovies';
 import Details from './component/Details';
+import Header3 from './component/Header3';
 import Header1 from './component/Header1';
 import Login from './component/Login';
 
@@ -17,7 +18,7 @@ function App() {
   return (
     <Appstate.Provider value={{login, userName, setLogin, setUserName}} >
       <div className="App">
-    <Header1/>
+    <Header3/>
     
      < Routes>
      <Route path="/" element={<Cards/>}/>

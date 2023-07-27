@@ -34,12 +34,14 @@ const Cards = () => {
     { data.map((e,i)=>{
       return(
     <Link to={`/details/${e.id}`}>
+        
       <div key={i} className='carditem' >
         <img  src={e.image}alt='image'  />
         <div className="content">
           <h3>{e.title}</h3>
           <p>{e.year}</p>
-          <span id='spans'>MEU  {e.rating/e.rated}</span>
+          <span id='spans'>MEU  {
+             (e.rating/e.rated).toFixed(2)}</span>
          <ReactStars size={15} half={true} value={e.rating/e.rated} edit={false}/>
         
         </div>

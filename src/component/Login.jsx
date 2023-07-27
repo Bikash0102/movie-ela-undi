@@ -65,7 +65,7 @@ const Login = () => {
             Mobile No.
           </label>
           <input
-            type={"number"}
+            type="tel"
             id="message"
             name="message"
             value={form.mobile}
@@ -80,6 +80,7 @@ const Login = () => {
             Password
           </label>
           <input
+               type={'password'}
             id="message"
             name="message"
             value={form.password}

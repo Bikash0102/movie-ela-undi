@@ -38,7 +38,7 @@ const Signup = () => {
         .then(confirmationResult => {
           window.confirmationResult = confirmationResult;
           swal({
-            text: "OTP Sent",
+            text: "OTP SENT",
             icon: "success",
             buttons: false,
             timer: 3000,
@@ -134,7 +134,7 @@ const Signup = () => {
             Mobile No.
           </label>
           <input
-            type={"number"}
+            type={"tel"}
             id="message"
             name="message"
             value={form.mobile}
