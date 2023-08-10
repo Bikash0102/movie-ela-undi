@@ -60,10 +60,10 @@ function Header3() {
             <div class="login-register">
                 {useAppstate.login ?
                         <>
-                        <Link to={'/addmovie'}><a href="#" class="button">Addmovie</a></Link></>
+                        <Link onClick={handleClick} to={'/addmovie'}><a href="#"  class="button">Addmovie</a></Link></>
                     :
-                    <><Link to={'/login'}><a href="#" class="button">Login</a></Link>
-                    <Link to={'/signup'}><a href="#" class="button">Register</a></Link>
+                    <><Link onClick={handleClick}  to={'/login'}><a href="#" class="button">Login</a></Link>
+                    <Link onClick={handleClick} to={'/signup'}><a href="#" class="button">Register</a></Link>
                     </>
                 }
                   
